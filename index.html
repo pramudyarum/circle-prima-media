@@ -2,6 +2,43 @@
 <html lang="id">
 <head>
   <style>
+  /* Scroll Indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 42px;
+    border: 2px solid rgba(255,255,255,0.8);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    animation: fadeIn 1.5s ease forwards;
+  }
+
+  .scroll-indicator span {
+    width: 4px;
+    height: 8px;
+    background: white;
+    border-radius: 4px;
+    animation: scrollMove 1.6s infinite;
+  }
+
+  @keyframes scrollMove {
+    0%   { opacity: 0; transform: translateY(0); }
+    40%  { opacity: 1; }
+    100% { opacity: 0; transform: translateY(14px); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+</style>
+
+  <style>
   html { scroll-behavior: smooth; }
 
   .fade-up {
@@ -92,6 +129,10 @@
     </div>
 
   </div>
+<!-- Scroll Indicator -->
+<a href="#about" class="scroll-indicator">
+  <span></span>
+</a>
 
 </section>
 
@@ -206,6 +247,17 @@
 
     input.value = "";
   }
+</script>
+<script>
+  const indicator = document.querySelector('.scroll-indicator');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      indicator.style.opacity = '0';
+    } else {
+      indicator.style.opacity = '1';
+    }
+  });
 </script>
 
 </body>
