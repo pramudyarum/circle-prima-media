@@ -135,6 +135,35 @@
 </a>
 
 </section>
+<section id="ai-demo" style="padding:80px 20px; background:#0f172a; color:white;">
+  <h2 style="text-align:center; font-size:32px;">Demo AI JDIH</h2>
+  <p style="text-align:center; opacity:.8;">
+    Coba ajukan pertanyaan hukum
+  </p>
+
+  <div style="max-width:600px; margin:30px auto;">
+    <input
+      id="aiQuestion"
+      placeholder="Contoh: Apa itu Peraturan Presiden?"
+      style="width:100%; padding:14px; border-radius:8px; border:none; font-size:16px;"
+    />
+
+    <button
+      onclick="askAI()"
+      style="margin-top:12px; width:100%; padding:14px;
+      background:#2563eb; color:white; border:none;
+      border-radius:8px; font-size:16px; cursor:pointer;">
+      Tanya AI
+    </button>
+
+    <div
+      id="aiAnswer"
+      style="margin-top:20px; padding:16px;
+      background:#020617; border-radius:8px; min-height:60px;">
+      Jawaban AI akan muncul di sini...
+    </div>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="max-w-6xl mx-auto py-16 px-4 bg-white mt-10 rounded shadow">
