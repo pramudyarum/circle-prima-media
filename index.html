@@ -314,6 +314,33 @@ async function askAI() {
   }
 }
 </script>
+<script>
+function askAI() {
+  const q = document.getElementById("aiQuestion").value.toLowerCase();
+  const box = document.getElementById("aiAnswer");
+
+  box.innerHTML = "AI sedang menganalisis...";
+
+  setTimeout(() => {
+    let answer = "Maaf, pertanyaan belum dikenali. Silakan coba pertanyaan lain.";
+
+    if (q.includes("jdih")) {
+      answer = "JDIH adalah sistem pendokumentasian dan penyebarluasan informasi hukum secara nasional yang bertujuan menjamin ketersediaan dokumen hukum yang lengkap, akurat, dan mudah diakses oleh masyarakat.";
+    } 
+    else if (q.includes("peraturan presiden")) {
+      answer = "Peraturan Presiden adalah peraturan perundang-undangan yang ditetapkan oleh Presiden untuk menjalankan perintah undang-undang atau dalam rangka penyelenggaraan pemerintahan.";
+    }
+    else if (q.includes("peraturan pemerintah")) {
+      answer = "Peraturan Pemerintah merupakan peraturan yang ditetapkan Presiden untuk menjalankan undang-undang sebagaimana mestinya.";
+    }
+    else if (q.includes("fungsi")) {
+      answer = "Fungsi JDIH antara lain pengumpulan, pengolahan, penyimpanan, pelestarian, dan penyebarluasan dokumen hukum secara sistematis dan terintegrasi.";
+    }
+
+    box.innerHTML = answer;
+  }, 1200);
+}
+</script>
 
 </body>
 </html>
