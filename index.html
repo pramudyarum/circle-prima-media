@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CV Circle Prima Media - Solusi JDIH cerdas berbasis Artificial Intelligence untuk instansi pemerintah dan lembaga hukum.">
+<meta name="keywords" content="JDIH, Artificial Intelligence, Website Hukum, Legal Tech">
+<meta property="og:title" content="CV Circle Prima Media - Solusi JDIH Berbasis AI">
+<meta property="og:description" content="Website JDIH cerdas berbasis Artificial Intelligence untuk instansi pemerintah dan lembaga hukum.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<title>CV Circle Prima Media - Solusi JDIH AI</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6;background:#f5f5f5;color:#333}
+h1,h2,h3{color:#003366}
+a{text-decoration:none;color:#003366}
+
+header{background:#003366;position:fixed;width:100%;z-index:1000}
+nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem}
+.logo{color:#fff;font-size:1.4rem;font-weight:bold}
+nav ul{list-style:none;display:flex}
+nav ul li{margin-left:2rem}
+nav ul li a{color:#fff}
+
+.menu-toggle{display:none;font-size:1.8rem;color:white;cursor:pointer}
+
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
+background:linear-gradient(to right,#003366,#0055aa);color:white;padding:120px 1rem}
+.hero h1{font-size:3rem;margin-bottom:1rem}
+.hero p{font-size:1.2rem;margin-bottom:2rem}
+.cta-button{background:#ff6600;color:white;padding:1rem 2rem;border-radius:5px}
+.cta-button:hover{background:#e55a00}
+
+section{max-width:1200px;margin:3rem auto;padding:3rem 1rem;background:white;border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,.1)}
+
+.features{background:#f5f5f5}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.card{text-align:center;padding:1.5rem;border:1px solid #ddd;border-radius:8px}
+.card:hover{transform:translateY(-5px)}
+
+.hidden{opacity:0;transform:translateY(20px)}
+.fade-in{animation:fadeIn .8s ease forwards}
+@keyframes fadeIn{to{opacity:1;transform:none}}
+
+form{max-width:600px;margin:auto;display:grid;gap:1rem}
+input,textarea{padding:.6rem;border:1px solid #ccc;border-radius:5px}
+button{background:#003366;color:white;padding:.7rem;border:none;border-radius:5px;cursor:pointer}
+
+footer{text-align:center;background:#003366;color:white;padding:1rem}
+
+@media(max-width:768px){
+nav ul{display:none;flex-direction:column;background:#003366;position:absolute;top:60px;right:0;width:100%}
+nav ul.active{display:flex}
+nav ul li{margin:1rem 0;text-align:center}
+.menu-toggle{display:block}
+.hero h1{font-size:2rem}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">CV Circle Prima Media</div>
+<div class="menu-toggle" id="menuToggle">☰</div>
+<ul>
+<li><a href="#home">Beranda</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#services">Layanan</a></li>
+<li><a href="#features">Fitur AI</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<div>
+<h1>Solusi JDIH Cerdas Berbasis Artificial Intelligence</h1>
+<p>Mendukung transformasi digital hukum untuk instansi pemerintah & lembaga hukum.</p>
+<a href="#contact" class="cta-button">Konsultasi Gratis</a>
+</div>
+</section>
+
+<section id="about" class="hidden">
+<h2>Tentang Kami</h2>
+<p>CV Circle Prima Media adalah perusahaan pengembang website JDIH berbasis AI untuk pengelolaan, pencarian, dan analisis dokumen hukum secara cerdas dan aman.</p>
+<p><strong>Visi:</strong> Pemimpin transformasi digital hukum nasional.</p>
+<p><strong>Misi:</strong> Menyediakan solusi JDIH yang efisien, aman, dan inovatif.</p>
+</section>
+
+<section id="services" class="hidden">
+<h2>Layanan</h2>
+<div class="grid">
+<div class="card"><h3>Website JDIH</h3><p>Desain responsif & sesuai standar nasional.</p></div>
+<div class="card"><h3>Sistem Dokumentasi</h3><p>Manajemen dokumen hukum terstruktur.</p></div>
+<div class="card"><h3>Integrasi AI</h3><p>Semantic search, summarization, chatbot.</p></div>
+<div class="card"><h3>Support & Maintenance</h3><p>Dukungan berkelanjutan.</p></div>
+</div>
+</section>
+
+<section id="features" class="features hidden">
+<h2>Fitur Unggulan AI</h2>
+<div class="grid">
+<div class="card">Semantic Search Dokumen</div>
+<div class="card">Ringkasan Otomatis Peraturan</div>
+<div class="card">Klasifikasi & Tagging Otomatis</div>
+<div class="card">Chatbot Hukum Internal</div>
+<div class="card">Analisis Keterkaitan Regulasi</div>
+</div>
+</section>
+
+<section id="contact" class="hidden">
+<h2>Kontak Kami</h2>
+<p>Email: info@circleprimamedia.com</p>
+<form>
+<input type="text" placeholder="Nama" required>
+<input type="email" placeholder="Email" required>
+<textarea rows="4" placeholder="Pesan"></textarea>
+<button>Kirim Pesan</button>
+</form>
+</section>
+
+<footer>
+<p>&copy; <span id="year"></span> CV Circle Prima Media. Semua Hak Dilindungi.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+
+document.getElementById("menuToggle").onclick=()=>{
+document.querySelector("nav ul").classList.toggle("active")
+};
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.onclick=e=>{
+e.preventDefault();
+document.querySelector(a.getAttribute("href")).scrollIntoView({behavior:"smooth"});
+document.querySelector("nav ul").classList.remove("active");
+};
+});
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("fade-in");
+entry.target.classList.remove("hidden");
+observer.unobserve(entry.target);
+}
+});
+},{threshold:.15});
+
+document.querySelectorAll(".hidden").forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
