@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <style>
+  html { scroll-behavior: smooth; }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-out forwards;
+  }
+
+  .fade-up-delay-1 {
+    animation-delay: 0.4s;
+  }
+
+  .fade-up-delay-2 {
+    animation-delay: 0.7s;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV Circle Prima Media - Solusi JDIH Berbasis AI</title>
@@ -30,31 +55,45 @@
 </header>
 
 <!-- HERO -->
-<section id="home" class="pt-28 min-h-screen relative flex items-center justify-center">
+<!-- HERO PREMIUM -->
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
 
   <!-- Background Gradient -->
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900"></div>
 
-  <!-- Overlay Gelap -->
-  <div class="absolute inset-0 bg-black/30"></div>
+  <!-- Subtle Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Decorative Blur -->
+  <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-600/30 rounded-full blur-3xl"></div>
+  <div class="absolute top-1/2 -right-40 w-96 h-96 bg-indigo-500/30 rounded-full blur-3xl"></div>
 
   <!-- Content -->
-  <div class="relative z-10 max-w-4xl mx-auto text-center px-4 text-white">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6">
-      Solusi JDIH Cerdas Berbasis<br>
-      <span class="text-orange-400">Artificial Intelligence</span>
-    </h2>
-    <p class="mb-8 text-lg md:text-xl text-gray-100">
-      Transformasi digital dokumentasi hukum untuk instansi pemerintah dan lembaga hukum.
+  <div class="relative z-10 max-w-5xl mx-auto text-center px-6 text-white">
+    
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight fade-up">
+      Solusi JDIH Cerdas<br>
+      <span class="text-orange-400">
+        Berbasis Artificial Intelligence
+      </span>
+    </h1>
+
+    <p class="mt-6 text-lg md:text-xl text-gray-200 fade-up fade-up-delay-1">
+      Transformasi digital dokumentasi dan informasi hukum  
+      untuk instansi pemerintah dan lembaga hukum Indonesia.
     </p>
-    <a href="#contact"
-       class="inline-block bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-semibold shadow-lg transition">
-      Konsultasi Gratis
-    </a>
+
+    <div class="mt-10 fade-up fade-up-delay-2">
+      <a href="#contact"
+         class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-xl font-semibold shadow-xl transition duration-300">
+        Konsultasi Gratis
+        <span class="text-xl">→</span>
+      </a>
+    </div>
+
   </div>
 
 </section>
-
 
 <!-- ABOUT -->
 <section id="about" class="max-w-6xl mx-auto py-16 px-4 bg-white mt-10 rounded shadow">
