@@ -178,6 +178,39 @@
     aksesibilitas, dan pengelolaan dokumen hukum yang modern dan efisien.
   </p>
 </section>
+<section id="ai-demo" class="hidden">
+<h2>Demo Artificial Intelligence (Mock)</h2>
+<p>Simulasi antarmuka AI untuk sistem JDIH (tanpa backend).</p>
+
+<div class="grid">
+
+<!-- AI SEARCH -->
+<div class="ai-box">
+<h3>🔍 AI Semantic Search Dokumen Hukum</h3>
+<input type="text" id="aiSearch" placeholder="Contoh: Peraturan ASN" />
+<button onclick="runSearch()">Cari</button>
+
+<div id="searchResults" class="ai-search-results"></div>
+</div>
+
+<!-- AI CHATBOT -->
+<div class="ai-box">
+<h3>🤖 Chatbot Hukum Internal</h3>
+
+<div class="chat-box">
+<div class="chat-messages" id="chatMessages">
+<div class="bot">Halo, saya Asisten Hukum AI. Silakan ajukan pertanyaan.</div>
+</div>
+
+<div class="chat-input">
+<input type="text" id="chatInput" placeholder="Tanyakan regulasi..." />
+<button onclick="sendChat()">Kirim</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
 
 <!-- SERVICES -->
 <section id="services" class="max-w-6xl mx-auto py-16 px-4">
