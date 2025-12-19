@@ -288,6 +288,32 @@
     }
   });
 </script>
+<script>
+async function askAI() {
+  const question = document.getElementById("aiQuestion").value;
+  const answerBox = document.getElementById("aiAnswer");
+
+  if (!question) {
+    answerBox.innerText = "Silakan masukkan pertanyaan.";
+    return;
+  }
+
+  answerBox.innerText = "AI sedang berpikir...";
+
+  try {
+    const res = await fetch("https://jdih-ai-api.pramudya-rum.workers.dev", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question })
+    });
+
+    const data = await res.json();
+    answerBox.innerText = data.answer;
+  } catch (err) {
+    answerBox.innerText = "Gagal terhubung ke AI.";
+  }
+}
+</script>
 
 </body>
 </html>
